@@ -13,17 +13,23 @@ export default function Header() {
 			<div className={`flex justify-between h-[120px] shadow-md md:h-[70px] md:justify-normal ${!isSupportPage ? "bg-black" : "bg-white"}`}>
 				{/* логотип */}
 				<Link to='/'>
-					<div className='hover:cursor-pointer mt-[60px] ml-[40px] md:ml-[60px] md:mt-[18px]'>
+					<div className='hover:cursor-pointer mt-[60px] ml-[40px] md:ml-[60px] md:mt-[18px] md:h-[34px]'>
 						<img src={!isSupportPage ? "/header/logo-white.svg" : "/header/logo.svg"} alt='Logo' />
 					</div>
 				</Link>
 				<div className={`mt-[24px] text-[18px] gap-x-[20px]  font-semibold ml-[175px] hidden md:flex ${!isSupportPage ? "text-white" : "text-black"} `}>
-					<div>Услуги</div>
-					<div>О нас</div>
-					<div>Поддержка</div>
+					<Link to='/services'>
+						<div>Услуги</div>{" "}
+					</Link>
+					<Link to='/about'>
+						<div>О нас</div>{" "}
+					</Link>
+					<Link to='/support'>
+						<div>Поддержка</div>{" "}
+					</Link>
 				</div>
 				<div className='mt-[26px] ml-[68.5px] hidden md:block'>
-					<img src='/header/tg-icon.svg' alt='' />
+					<img src={!isSupportPage ? "/header/tg-icon-white.svg" : "/header/tg-icon.svg"} alt='Menu' />
 				</div>
 
 				{/* кнопка бургер */}

@@ -10,8 +10,8 @@ export default function HomePage() {
 
 				{/* Контент поверх видео */}
 				<div className='relative mt-[108px] ml-[40px] flex flex-col h-full  md:mt-[0px] md:ml-[0px]    text-white font-montserrat-alternates '>
-					<h1 className='text-xl font-semibold  w-[245px] h-[48px]  md:mt-[151px] md:w-full md:text-[28px] md:mx-[116px] md:h-[38px]'>Каждая идея начинается с линии</h1>
-					<p className='text-[18px] w-[270px] h-[44px] md:mx-[171px] md:w-[426px] md:h-[58px] md:text-[24px]/[29px] md:text-center md: '>Мы доводим её до дизайна, сайта и бренда</p>
+					<h1 className='text-[20px]/[24px] font-semibold  w-[245px] h-[48px]  md:mt-[151px] md:w-full md:text-[28px] md:mx-[116px] md:h-[38px]'>Каждая идея начинается с линии</h1>
+					<p className='text-[18px]/[22px] mt-[2px] w-[270px] h-[44px] md:mx-[171px] md:w-[426px] md:h-[58px] md:text-[24px]/[29px] md:text-center  '>Мы доводим её до дизайна, сайта и бренда</p>
 				</div>
 			</div>
 

@@ -4,7 +4,13 @@ export default function SupportPage() {
 	const faq = [
 		{
 			q: "Можно ли обратиться к вам, если идея ещё не до конца сформирована?",
-			a: "Да. Многие проекты приходят к нам именно на этом этапе. Мы помогаем сформулировать идею, расставить приоритеты и понять, с чего лучше начать. Первый разговор — это не бриф, а диалог.",
+			a: (
+				<>
+					Да.
+					<br />
+					Многие проекты приходят к нам именно на этом этапе. Мы помогаем сформулировать идею, расставить приоритеты и понять, с чего лучше начать. Первый разговор — это не бриф, а диалог.
+				</>
+			),
 		},
 		{
 			q: "С какими проектами вы работаете?",
@@ -30,26 +36,25 @@ export default function SupportPage() {
 
 	return (
 		<div className='font-montserrat-alternates'>
-			<div className='bg-white h-[306px] pt-[40px] font-montserrat-alternates '>
-				<h2 className=' ml-[40px] text-[18px] font-semibold'>Форма обратной связи</h2>
-				<div className='pl-[40px]'>
+			<div className='bg-white h-[306px] py-[40px] font-montserrat-alternates  px-[40px] md:py- md:px-[60px]'>
+				<h2 className=' text-[18px] font-semibold md:text-[24px]/[29px]'>Форма обратной связи</h2>
+				<div className='flex flex-col gap-y-[14.5px] md:gap-y-[14px]'>
 					<div className='flex   mt-[20px]'>
-						<input className='border-1 h-[35px] w-[280px] p-[5px] pl-[13px]' type='text' placeholder='Имя' />
+						<input className='border-1 h-[35px] w-[280px] p-[5px] pl-[13px] md:w-[260px] md:h-[35px]' type='text' placeholder='Имя' />
 					</div>
-					<div className='flex  mt-[14.5px]'>
-						<input className='border-1 h-[35px] w-[280px] p-[5px] pl-[13px]' type='tel' placeholder='Контактный номер' />
+					<div className='flex '>
+						<input className='border-1 h-[35px] w-[280px] p-[5px] pl-[13px] md:w-[260px] md:h-[35px]' type='tel' placeholder='Контактный номер' />
 					</div>
 				</div>
-				<button className='bg-[#1FD0B6] text-white h-[35px] w-[150px] rounded-md ml-[40px] mt-[14.5px] cursor-pointer'>Отправить</button>
-				<div className='px-[40px]'>
+				<button className='bg-[#1FD0B6] text-white h-[35px] w-[150px] rounded-md  mt-[14.5px] cursor-pointer  md:w-[147px] md:h-[35px] md:text-[16px]/[24px]'>Отправить</button>
+				<div className='md:max-w-[314px]'>
 					<div className='border-b-[3px] mt-[30px]'></div>
 				</div>
 			</div>
-			<div className='bg-black h-min-[402px] pt-[40px] pb-[40px]'>
-				<div className='text-white px-[40px]'>
-					<div className='text-[18px] font-semibold'>F.A.Q.</div>
-
-					<div className='flex flex-col gap-y-[15px] mt-[20px] text-[16px] '>
+			<div className='bg-black h-max-[402px] px-[40px] py-[40px] md:px-[60px] md:py-[55px] '>
+				<div className='text-white '>
+					<div className='text-[18px] font-semibold  md:text-[24px]/[29px]'>F.A.Q.</div>
+					<div className='flex flex-col gap-y-[15px] mt-[20px] text-[16px]/[20px] font-light md:max-w-[537px] md:text-[20px]/[24px] '>
 						{faq.map((item, index) => (
 							<div key={index} className=' flex'>
 								<div className='flex flex-col'>
@@ -64,10 +69,10 @@ export default function SupportPage() {
 
 									<div
 										className={`overflow-hidden transition-all duration-700 ease-in-out
-								${activeIndex === index ? "max-h-[300px] opacity-100 mt-[10px]" : "max-h-0 opacity-0"}
+								${activeIndex === index ? "max-h-[300px] opacity-100 mt-[10px] md:mt-[15px]" : "max-h-0 opacity-0"}
 							`}
 									>
-										<p className=' text-[15px]'>{item.a}</p>
+										<p className=' text-[15px]/[18px] md:text-[20px]/[24px]'>{item.a}</p>
 									</div>
 								</div>
 							</div>
@@ -75,16 +80,16 @@ export default function SupportPage() {
 					</div>
 				</div>
 			</div>
-			<div className='bg-white h-[276px]'>
-				<div className='px-[40px]'>
-					<div className='border-b-[3px] border-black mt-[30px]'></div>
+			<div className='bg-white h-[276px] px-[40px] md:px-[60px]'>
+				<div className='md:max-w-[314px]'>
+					<div className='border-b-[3px] border-black mt-[30px] '></div>
 				</div>
-				<div className='px-[40px] mt-[30px]'>
-					<div className='text-[18px]'>Контакты</div>
-					<div className='flex flex-col gap-[20px] mt-[30px]'>
-						<div className='border-b-[3px] border-b-[#1527AC] w-[108px]'>mail@hilinee</div>
-						<div className='border-b-[3px] border-b-[#1527AC] w-[151px]'>Пн-Пт 10.00-19.00</div>
-						<div className='border-b-[3px] border-b-[#1527AC] w-[130px]'>Telegram · Max</div>
+				<div className='mt-[30px]'>
+					<div className='text-[18px] md:text-[24px]/[29px] font-semibold'>Контакты</div>
+					<div className='flex flex-col gap-y-[20px] mt-[30px] md:gap-y-[24px]  md:text-[16px]/[20px] md:text-[20px]/[24px]'>
+						<div className='border-b-[3px] border-b-[#1527AC] w-[108px] md:w-[136px] md:border-b-[2px]'>mail@hilinee</div>
+						<div className='border-b-[3px] border-b-[#1527AC] w-[151px] md:w-[189px] md:border-b-[2px]'>Пн-Пт 10.00-19.00</div>
+						<div className='border-b-[3px] border-b-[#1527AC] w-[130px] md:w-[162px] md:border-b-[2px]'>Telegram · Max</div>
 					</div>
 				</div>
 			</div>

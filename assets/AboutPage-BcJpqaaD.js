@@ -7,7 +7,7 @@ import{w as h,a as e,p as x}from"./chunk-EPOLDU6W-DJQZ5pZN.js";const l=[{image:"
 					md:min-w-[458px] md:h-[329px]\r
 					xl:min-w-[774px] xl:h-[556px]\r
 					xl:p-[56px]\r
-				`,children:x.jsx("img",{src:"/images/about/carousel_1_480.jpg",srcSet:`\r
+				`,children:x.jsx("img",{src:"/hilinee.ru//images/about/carousel_1_480.jpg",srcSet:`\r
 						/images/about/carousel_1_480.jpg 480w,\r
 						/images/about/carousel_1_768.jpg 768w,\r
 						/images/about/carousel_1_1280.jpg 1280w\r
